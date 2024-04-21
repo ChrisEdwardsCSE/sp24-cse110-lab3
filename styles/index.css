@@ -1,0 +1,163 @@
+* {
+  --main-text-color: rgb(0, 72, 1);
+  color: var(--main-text-color);
+}
+html {
+  background-color: #fdf8e9;
+  padding: 0rem;
+  font-family: 'Roboto', sans-serif;
+
+  overflow-x: hidden;
+}
+
+h2, h3 {
+  color:rgb(126, 75, 0);
+}
+
+
+.heading {
+  /*background-color: hsl(96, 63.6, 89.2);*/
+  --section-color: rgb(235, 248, 226);
+  background-color: var(--section-color, rgb(235, 248, 226));
+  border: solid 4px rgb(126, 75, 0);
+  border-radius: 10px;
+
+  margin: auto;
+  /*margin: 1em 1em 0.3em 0.3em;*/
+  width: 60%;
+  min-width: min(40rem, 40%);
+}
+
+header :hover {
+  background-color: rgb(172, 192, 158);
+}
+
+section + a {
+  position: relative;
+  left: 50%;
+  padding-bottom: .5rem;
+}
+
+section ~ img {
+  max-width: 3.5rem;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+div.heading-text {
+  /* margin-top: 1em;
+  margin-left: 1.4em; */
+  text-align: center;
+  font-size: max(2.2vh, 14px);
+  
+}
+
+
+div:has(details) {
+  text-decoration: green solid underline;
+  margin: 1em 1em 0.3em 1.3em;
+  /*border: solid 4px rgb(126, 75, 0);*/
+  border-width: 4px;
+  border-style: solid;
+  border-radius: 4px;
+  width: 30%;
+
+  border-color: color-mix(in srgb, #935c00 80%, rgb(0, 72, 1));
+}
+
+.section-container {
+  background-color: rgb(235, 248, 226);
+  border-style: solid;
+  border-color:rgb(126, 75, 0);
+  border-width: 4px;
+  border-radius: 10px;
+
+  padding: 0.3rem 2rem 1rem 1.5rem;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0.3em;
+  margin-right: 0.3em;
+
+  
+}
+
+.section-container:active {
+  border: rgb(0, 72, 1) solid 4px;
+
+}
+
+div li {
+  font-size: min(16px, 2.5vw);
+}
+
+.assignment-name {
+  color: var(--main-text-color);
+  padding: 0em;
+}
+
+.assignment-grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1rem;
+
+  & .assignment-grid-item {
+    max-width: 26rem;
+  }
+}
+
+.assignees {
+  display: block
+}
+
+#timeline-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-auto-rows: auto;
+  gap: 0.5rem;
+}
+
+.timeline-grid-item {
+  /*border: red solid 2px;*/
+  border-style: solid;
+  border-width: 4px;
+  border-color: color(display-p3 1 0.6 0.34);
+}
+
+span > h2 {
+  padding-top: 4mm;
+  padding-bottom: .4cm;
+  padding-left: 4px;
+  padding-right: 2px;
+}
+
+.takeaways-title {
+  display: block;
+  font-size: 1.4em;
+  font-weight: 600;
+  color: rgb(126, 75, 0);
+}
+
+img[src="media/ucsd-logo.png"] {
+  border: solid navy 4px;
+  display: inline-block;
+  padding: 4px;
+}
+
+.jacobs-logo {
+  height: 4.44rem;
+  border: navy solid 4px;
+  padding: 4px;
+}
+
+
+
+@media (min-width: 51.5rem) {
+  
+  .section-container {
+    max-width: 70%;
+    min-width: 45rem;
+  }
+
+}
