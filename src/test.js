@@ -1,5 +1,5 @@
 /**
- * Take parameter, multiply by 2 and return
+ * Take parameter, multiply by 2 
  * @param {number} param1 
  * @returns {number}
  */
