@@ -19,3 +19,4 @@ jobs:
           source_dir: src
           recurse: true
           output_dir: out
+          config_file: conf.json
